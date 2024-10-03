@@ -31,24 +31,27 @@ const Slider = () => {
     }, [activeImage]);
 
     return (
-        <div className="top-0 left-0 w-full z-10 overflow-hidden container">
-            <div className="flex justify-center items-center gap-4 transition-transform ease-in-out duration-500">
-                {imageList.map((image, index) => (
-                    <div key={index} className={`object-cover transition-all duration-500 ease-in-out ${index === activeImage ? 'block' : 'hidden'}`}>
-                        <Image
-                            src={image.src} // Source path of the image
-                            alt={image.alt} // Alt text for the image
-                            layout="fill" // Make the image fill the container
-                            objectFit="cover" // Ensure the image covers the container
-                            className="absolute w-full h-full object-cover"
-                        />
-                   
-                    </div>
-                ))}
-              
+        <div className="relative top-0 left-0 w-full z-10 overflow-hidden container">
+        <div className="relative w-full h-[700px]"> {/* Adjust height if necessary */}
+          {imageList.map((image, index) => (
+            <div
+              key={index}
+              className={`object-cover transition-all duration-500 ease-in-out ${
+                index === activeImage ? 'block' : 'hidden'
+              }`}
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                layout="fill"
+                objectFit="cover"
+                className="absolute w-full h-full object-cover"
+              />
             </div>
-       
-        </div> 
+          ))}
+        </div>
+      </div>
+      
            
     );
 };
