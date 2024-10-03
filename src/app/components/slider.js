@@ -6,9 +6,10 @@ import Image from "next/image"; // Import the Image component from Next.js
 
 
 const imageList = [
-    { src: "/DSC01560.jpg", alt: "First Slide" },
-    { src: "/DSC01671.jpg", alt: "Second Slide" },
-    { src: "/DSC01509.jpg", alt: "Fourth Slide" },
+  { src: "/DSC01671.jpg", alt: "1 Slide" },
+    { src: "/DSC01560.jpg", alt: "2 Slide" },
+    { src: "/DSC01529.jpg", alt: "3 Slide" },
+    { src: "/DSC01503.jpg", alt: "4 Slide" },
 ];
 
 const Slider = () => {
@@ -31,26 +32,21 @@ const Slider = () => {
     }, [activeImage]);
 
     return (
-        <div className="relative top-0 left-0 w-full z-10 overflow-hidden container">
-        <div className="relative w-full h-[700px]"> {/* Adjust height if necessary */}
-          {imageList.map((image, index) => (
-            <div
-              key={index}
-              className={`object-cover transition-all duration-500 ease-in-out ${
-                index === activeImage ? 'block' : 'hidden'
-              }`}
-            >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                layout="fill"
-                objectFit="cover"
-                className="absolute w-full h-full object-cover"
-              />
+      <div className=" top-0 left-0 w-full overflow-hidden container">
+            <div className="flex justify-center items-center gap-4 transition-transform ease-in-out duration-500 ">
+                {imageList.map((image, index) => (
+                    <div key={index} className={`object-cover transition-all duration-500 ease-in-out ${index === activeImage ? 'block' : 'hidden'}`}>
+                        <Image
+                            src={image.src} // Source path of the image
+                            alt={image.alt} // Alt text for the image
+                            layout="fill" // Make the image fill the container
+                            objectFit="cover" // Ensure the image covers the container
+                            className="absolut w-full h-full "
+                        />
+                    </div>
+                ))}
             </div>
-          ))}
         </div>
-      </div>
       
            
     );
