@@ -11,21 +11,21 @@ const Services = () => {
       description: "We specialize in creating durable and attractive pavements and pathways.",
       icon: <Ruler className="h-8 w-8 mb-2 text-blue-600" />,
       items: ["Side Walks", "Drive Thrus"],
-      image: "/DSC01589.jpg",
+      image: "/Sidewalk.jpeg",
     },
     {
       title: "Structural Elements",
       description: "Our expertise extends to various structural concrete elements.",
       icon: <Building2 className="h-8 w-8 mb-2 text-blue-600" />,
       items: ["Curbs", "Stairs"],
-      image: "/DSC01588.jpg",
+      image: "/curb.jpeg",
     },
     {
       title: "Additional Services",
       description: "We offer a range of additional concrete services to meet your needs.",
       icon: <Hammer className="h-8 w-8 mb-2 text-blue-600" />,
       items: ["Gutters", "Slabs"],
-      image: "/placeholder.svg?height=550&width=550",
+      image: "/Gutter.jpg",
     },
   ];
 
@@ -64,17 +64,12 @@ const Services = () => {
                 ))}
               </ul>
             </div>
-            <div className="mt-auto p-6 bg-gray-50 text-center">
-              <button className="w-full flex items-center justify-center py-2 px-4 text-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-600 hover:text-white transition-all duration-300">
-                <span>Learn More</span>
-                <ChevronRight className="ml-2 h-5 w-5" />
-              </button>
-            </div>
+          
           </div>
         ))}
       </div>
       <div className="mt-16 text-center">
-        <Link href="/contact" passHref>
+        <Link href="/Contact" passHref>
           <button className="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg text-lg flex items-center justify-center transition-all duration-300">
             Contact Us
             <ChevronRight className="ml-2 h-5 w-5" />
