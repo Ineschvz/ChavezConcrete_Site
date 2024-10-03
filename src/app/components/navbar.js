@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="max-w-screen-xl">
     <Link href="/" legacyBehavior>
           <a className="rounded-full">
-            <Image src="/CC.jpg" alt="Chavez Concrete Logo" width={75} height={45} className="rounded-full" />
+            <Image src="/Badge Logo.jpg" alt="Chavez Concrete Logo" width={75} height={45} className="rounded-full" />
           </a>
         </Link>
     </div>
