@@ -21,7 +21,7 @@ Welcome to Chavez Concrete Work, inc where durability meets craftsmanship. With 
                 </div>
               </div>
               <Image 
-          src='/DSC01656.jpg' 
+          src='/GroupPhoto.jpg' 
           width="550"
           height="550"
           className= "mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"></Image>
