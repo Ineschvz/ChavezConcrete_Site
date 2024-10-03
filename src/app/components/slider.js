@@ -43,6 +43,9 @@ const Slider = () => {
                             objectFit="cover" // Ensure the image covers the container
                             className="absolut w-full h-full "
                         />
+                          <div className="absolute bottom-0 right-0 z-10">
+                <img src="/translogo.png" alt="Logo" className="max-w-[300px] h-auto" />
+            </div>
                     </div>
                 ))}
             </div>
