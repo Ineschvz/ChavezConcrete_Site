@@ -5,6 +5,7 @@ import Image from "next/image";
 import AboutUs from "./components/aboutus"
 import Sponsors from "./components/sponsors"
 import Slider from "./components/slider"
+import MapboxMap from "./components/map";
 
 export default function Home() {
   return (
@@ -22,7 +23,9 @@ export default function Home() {
     <div>
     <Sponsors/>
     </div>
-
+    <div>
+    <MapboxMap/>
+    </div>
   </main>
    
   );
