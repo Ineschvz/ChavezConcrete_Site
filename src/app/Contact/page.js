@@ -11,7 +11,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 
 
-const Contact = () => {
+function Contact ()  {
     return (
         <div >
             <header className="text-center bg-blue-700 text-white py-6 text-3xl font-bold">  Get in touch!  </header>
@@ -31,8 +31,7 @@ const Contact = () => {
             <div className="">
              <p className="font-bold text-3xl text-black text-center font-bold  sm:text-5xl xl:text-6xl/none bg-white"> Contact Form </p>
              <div className="text-center">
-            
-
+            <ContactForm></ContactForm>
              </div>
              
             </div>

@@ -22,7 +22,7 @@ function MapboxMap() {
     }); 
 
     const marker1 = new mapboxgl.Marker()
-    .setLngLat([12.554729, 55.70651])
+    .setLngLat([-80.7934, 35.7821])
     .addTo(mapboxMap);
 
 const geoJsonData = {
