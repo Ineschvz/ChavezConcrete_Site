@@ -6,10 +6,10 @@ import { Facebook } from "lucide-react"
 
 const navigationLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-  { href: "/services", label: "Services" },
-  { href: "/testimonials", label: "Testimonials" },
+  { href: "/About", label: "About" },
+  { href: "/Contact", label: "Contact" },
+  { href: "/Services", label: "Services" },
+  { href: "/Gallery", label: "Gallery" },
 ]
 
 export default function Footer() {
