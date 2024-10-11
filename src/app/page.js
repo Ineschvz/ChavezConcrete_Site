@@ -35,6 +35,7 @@
 import Image from "next/image"
 import AboutUs from "./components/aboutus"
 import Slider from "./components/slider"
+import Sponsors from "./components/sponsors"
 import MapboxMap from "./components/map"
 
 
@@ -58,7 +59,7 @@ export default function Home() {
       {/* About Us Section */}
       <section className="py-16 bg-white text-black items-center">
         <div className="container mx-auto px-4 items-center">
-          <h2 className="text-3xl font-bold text-center mb-8">About Us</h2>
+  
           <AboutUs />
         </div>
       </section>
@@ -76,12 +77,19 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section> */}
+            </section> */}
+                  {/* Sponsors Section */}
+
+      <section className="py-16 bg-gray-100 text-black">
+        <div className="container mx-auto px-4">
+          <Sponsors />
+        </div>
+      </section>
 
       {/* Map Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Find Us</h2>
+          <h2 className="text-3xl font-bold text-center mb-8 text-black">Find Us</h2>
           <div className="h-96">
             <MapboxMap />
           </div>
