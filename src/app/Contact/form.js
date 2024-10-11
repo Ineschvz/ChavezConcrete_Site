@@ -1,4 +1,10 @@
+
 'use client'
+
+//This is my form which will be rendered into my contact page 
+//will contain name, email and message >> will be sent through email via api and I (or owner will get)
+
+
 
 import React, {useState} from "react";
 
@@ -7,9 +13,24 @@ function contactForm () {
     const [email, setEmail] = useState ('');
     const [message, setMessage] = useState ('');
 
-    const onSubmit = (event) => {
+    const onSubmit = async (event) => {
         event.preventDefault();
-        console.log( 'data', name , email, message)
+        // console.log( 'data', name , email, message)
+        try {
+            const res = await fetch ('/api/contact', {
+                method: 'POST', 
+                body: JSON.stringify ({
+                    name, email, messgae
+                }),
+                headers:{
+                    'content-type': 'application/json'
+                }
+        })
+
+        } catch (err){
+            console.error('Err', err)
+
+        }
     }
 
     return (
