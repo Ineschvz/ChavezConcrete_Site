@@ -4,6 +4,8 @@ import React from "react"
 import Link from "next/link"
 import { Facebook } from "lucide-react"
 
+
+//object created to hold links to navigate through pages 
 const navigationLinks = [
   { href: "/", label: "Home" },
   { href: "/About", label: "About" },
@@ -20,7 +22,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h2 className="text-lg font-semibold">Contact Us</h2>
             <Link
-              href="/contact"
+              href="/Contact"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200"
             >
               Contact Us
