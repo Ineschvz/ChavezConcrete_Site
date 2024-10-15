@@ -32,8 +32,8 @@ export default function Navbar() {
                 {item.title}
               </Link>
             ))}
-            <a href="tel:+1234567890" className="text-white hover:text-blue-500 transition-colors duration-200 text-lg font-medium">
-              (123) 456-7890
+            <a href= "tel:+919-624-7744" className="text-white hover:text-blue-500 transition-colors duration-200 text-lg font-medium">
+            919-624-7744
             </a>
             
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 transition-colors duration-200">
@@ -79,13 +79,7 @@ export default function Navbar() {
                 {item.title}
               </Link>
             ))}
-            <a
-              href="tel:+919-624-7744"
-              className="text-white hover:text-blue-500 transition-colors duration-200 block px-3 py-2 text-base font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              919-624-7744
-            </a>
+        
             <div className="flex space-x-4 px-3 py-2">
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 transition-colors duration-200">
                 

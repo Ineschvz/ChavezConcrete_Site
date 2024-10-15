@@ -30,14 +30,14 @@ const Services = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-center text-4xl font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 py-6 rounded-md mb-12">
+    <div className="container mx-auto px-4 py-12 bg-white">
+      <h1 className=" text-black rounded-md mb-12 text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none">
         Our Services
       </h1>
-      <p className="text-xl text-center text-gray-500 mb-16 max-w-2xl mx-auto">
+      <p className=" text-gray-500 max-w-[600px] text-muted-foreground md:text-xl text-center mx-auto">
         Providing top-quality concrete solutions for all your construction needs
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-12">
         {services.map((service, index) => (
           <div
             key={index}
@@ -68,7 +68,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-      <div className="mt-16 text-center">
+      <div className=" text-center">
         <Link href="/Contact" passHref>
           <button className="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg text-lg flex items-center justify-center transition-all duration-300">
             Contact Us
