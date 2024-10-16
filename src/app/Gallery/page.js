@@ -7,9 +7,17 @@ export default function Gallery() {
     { src: '/roll3.JPG', alt: 'Gallery Image 3' },
     { src: '/roll4.JPG', alt: 'Gallery Image 4' },
     { src: '/roll5.JPG', alt: 'Gallery Image 5' },
-    { src: '/placeholder.svg?height=300&width=400', alt: 'Gallery Image 6' },
-    { src: '/placeholder.svg?height=300&width=400', alt: 'Gallery Image 7' },
-    { src: '/placeholder.svg?height=300&width=400', alt: 'Gallery Image 8' },
+    { src: '/IMG_2432.jpeg', alt: 'Gallery Image 8' },
+    { src: '/IMG_2427.jpeg', alt: 'Gallery Image 7' },
+    { src: '/IMG_2375.jpeg', alt: 'Gallery Image 7' },
+    { src: '/IMG_2377.jpeg', alt: 'Gallery Image 6' },
+    { src: '/roll6.jpeg', alt: 'Gallery Image 9' },
+    { src: '/roll7.jpeg', alt: 'Gallery Image 10' },
+    { src: '/roll8.jpeg', alt: 'Gallery Image 11' },
+    { src: '/roll9.jpeg', alt: 'Gallery Image 12' },
+    { src: '/roll10.jpeg', alt: 'Gallery Image 13' },
+
+
   ]
 
   return (
