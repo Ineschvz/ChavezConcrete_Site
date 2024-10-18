@@ -30,7 +30,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12 bg-white">
+    <div className=" mx-auto px-4 py-12 bg-white">
       <h1 className=" text-black rounded-md mb-12 text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none">
         Our Services
       </h1>

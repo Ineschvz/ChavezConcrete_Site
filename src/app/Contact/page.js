@@ -73,7 +73,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-white py-12">
-      <div className="container mx-auto px-4">
+      <div className=" mx-auto px-4">
         <motion.h1 
           className="text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none text-black"
           initial={{ opacity: 0, y: -20 }}

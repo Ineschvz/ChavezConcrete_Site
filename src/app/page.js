@@ -49,7 +49,7 @@ export default function Home() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Chavez Concrete Work Inc</h1>
             <p className="text-xl md:text-2xl text-white mb-8">Quality Concrete Solutions for Your Projects</p>
-            <a href="/Contact" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+            <a href="/Contact" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
               Get a Quote
             </a>
           </div>

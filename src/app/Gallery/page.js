@@ -21,7 +21,7 @@ export default function Gallery() {
   ]
 
   return (
-    <div className="container mx-auto px-4 py-8 bg-white">
+    <div className=" mx-auto px-4 py-8 bg-white">
       <h1 className="text-black rounded-md mb-12 text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none">Image Gallery</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((image, index) => (

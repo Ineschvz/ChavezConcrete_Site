@@ -114,7 +114,7 @@ export default function About() {
                 </div>
                 <div className="flex justify-center">
                   <button asChild>
-                    <a href="#our-story">Learn Our Story</a>
+                    <a  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"href="#our-story">Learn Our Story</a>
                   </button>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function About() {
         </section>
         <section id="our-story" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
           <div className="container mx-auto px-4 py-12 text-black">
-            <h2 className="text-4xl font-extrabold tracking-tight text-center sm:text-5xl xl:text-6xl mb-8">
+            <h2 className="text-4xl font-extrabold tracking-tight text-center sm:text-5xl xl:text-6xl mb-8 ">
               Our Story
             </h2>
             {[
