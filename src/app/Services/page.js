@@ -34,7 +34,7 @@ const Services = () => {
       <h1 className=" text-black rounded-md mb-12 text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none">
         Our Services
       </h1>
-      <p className=" text-gray-500 max-w-[600px] text-muted-foreground md:text-xl text-center mx-auto">
+      <p className=" text-black max-w-[600px] text-muted-foreground md:text-xl text-center mx-auto">
         Providing top-quality concrete solutions for all your construction needs
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-12">
