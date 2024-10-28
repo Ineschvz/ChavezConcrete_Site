@@ -1,17 +1,16 @@
-//Layout will contain navbar and footer b/c we want it to stay on each page
-
-
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar"
+import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Script from "next/script"; // Import Script component
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -29,22 +28,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-black text-white`}>
-        <Navbar/>
+        <Navbar />
 
-        <main> {children} </main>
+        <main>{children}</main>
 
         <Footer />
-        <script src="https://smtpjs.com/v3/smtp.js"> 
-        </script>
+
+        {/* Load SMTP.js asynchronously */}
+        <Script src="https://smtpjs.com/v3/smtp.js" strategy="lazyOnload" />
       </body>
     </html>
-    // <html lang="en">
-    //   <body
-    //     className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-    //   >
-    //     {children}
-    //   </body>
-    // </html>
-
   );
 }

@@ -91,7 +91,7 @@ export default function Home() {
   <div className="container mx-auto px-4">
     <h2 className="text-4xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-black">Our Service Area</h2>
     <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-black text-center">
-      Explore the map below to see the full radius of where we've worked. Zoom out to view the entire region we cover, and see how far our expertise extends.
+      Explore the map below to see the full radius of where we have worked. Zoom out to view the entire region we cover, and see how far our expertise extends.
     </p>
     <div className="h-96 shadow-lg rounded-lg overflow-hidden py-12">
       <MapboxMap />

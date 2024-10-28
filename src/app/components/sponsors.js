@@ -114,9 +114,10 @@ export default function Sponsors() {
             {testimonials.map((testimonial, index) => (
               <div key={index} className="flex flex-col items-center justify-center space-y-4 rounded-lg bg-muted p-6 text-center">
                
-                <blockquote className="text-lg font-semibold leading-snug">
-                  "{testimonial.quote}"
-                </blockquote>
+               <blockquote className="text-lg font-semibold leading-snug">
+  &quot;{testimonial.quote}&quot;
+</blockquote>
+
                 <div className="font-semibold">{testimonial.author}</div>
                 <div className="text-sm text-muted-foreground">{testimonial.title}</div>
               </div>
