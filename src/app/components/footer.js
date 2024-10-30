@@ -57,7 +57,7 @@ export default function Footer() {
 
           <div className="space-y-4">
             <h2 className="text-lg font-semibold">Office Location</h2>
-            <p>123 Concrete Ave, Building City, ST 12345</p>
+            <p>7223 Russell Rd Durham NC 27712</p>
           </div>
         </div>
 

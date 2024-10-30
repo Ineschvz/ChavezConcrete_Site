@@ -32,8 +32,8 @@ export default function Navbar() {
                 {item.title}
               </Link>
             ))}
-            <a href= "tel:+919-624-7744" className="text-white hover:text-blue-500 transition-colors duration-200 text-lg font-medium">
-            919-624-7744
+            <a href= "tel:+919-627-3839" className="text-white hover:text-blue-500 transition-colors duration-200 text-lg font-medium">
+            919-627-3839
             </a>
             
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 transition-colors duration-200">
