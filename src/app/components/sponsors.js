@@ -62,7 +62,7 @@
 import Image from "next/image";
 
 const companyLogos = [
-  { src: "/millsLogo.png", alt: "Mills Construction Company Logo" },
+  { src: "/mills-logo.png", alt: "Mills Construction Company Logo" },
   { src: "/neal-logo.png", alt: "Neal Construction & Consulting Logo" },
   // Add more company logos as needed
 ];
