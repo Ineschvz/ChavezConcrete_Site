@@ -59,14 +59,14 @@ export default function Contact() {
     },
     { 
       icon: Phone, 
-      text: '919-624-7744', 
-      href: 'tel:+919-624-7744',
+      text: '919-627-3839', 
+      href: 'tel:+919-627-3839',
       id: 'phone' 
     },
     { 
       icon: MapPin, 
-      text: '2231 New Hope Church Rd, Raleigh, NC 27604', 
-      href: 'https://www.google.com/maps/place/2231+New+Hope+Church+Rd,+Raleigh,+NC+27604/',
+      text: '7223 Russell Rd Durham NC 27712', 
+      href: 'https://www.google.com/maps?q=7223+Russell+Rd,+Durham,+NC+27712',
       id: 'address' 
     },
   ]
@@ -111,14 +111,17 @@ export default function Contact() {
               ))}
             </div>
             <div className="relative h-64 md:h-auto rounded-lg overflow-hidden">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.8105686681054!2d-78.60245908427!3d35.83636648016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac591a75c890ff%3A0xa651cae472a9d72c!2s2231%20New%20Hope%20Church%20Rd%2C%20Raleigh%2C%20NC%2027604!5e0!3m2!1sen!2sus!4v1635186524500!5m2!1sen!2sus" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy"
-              ></iframe>
+            <div className="relative h-64 md:h-auto rounded-lg overflow-hidden">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.1363000006823!2d-78.927474!3d36.0731485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acaaf1b2e3cd47%3A0x7bfb5b8e00c0d8fa!2s7223%20Russell%20Rd%2C%20Durham%2C%20NC%2027712!5e0!3m2!1sen!2sus!4v1696368396393!5m2!1sen!2sus"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+  ></iframe>
+</div>
+
             </div>
           </div>
         </div>
