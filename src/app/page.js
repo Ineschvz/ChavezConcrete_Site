@@ -40,7 +40,7 @@ import MapboxMap from "./components/map"
 
 
 export default function Home() {
-  return (
+  return ( 
     <main className="min-h-screen bg-gray-100">
       {/* Hero Section with Slider */}
       <section className="relative h-screen">
