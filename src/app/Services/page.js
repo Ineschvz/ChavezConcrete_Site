@@ -4,6 +4,10 @@ import { FaCheck } from "react-icons/fa";
 import { ChevronRight, Hammer, Building2, Ruler } from "lucide-react";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Services",
+  description: "Chavez Concrete Work Inc. provides a wide range of concrete services to help you complete your construction projects.",
+};
 const Services = () => {
   const services = [
     {
@@ -28,7 +32,8 @@ const Services = () => {
       image: "/Gutter.jpg",
     },
   ];
-
+  
+  
   return (
     <div className=" mx-auto px-4 py-12 bg-white">
       <h1 className=" text-black rounded-md mb-12 text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none">

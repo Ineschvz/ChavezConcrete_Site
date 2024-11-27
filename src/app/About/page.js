@@ -96,6 +96,10 @@
 import Image from "next/image"
 // import { Button } from "@/components/ui/button"
 
+export const metadata = {
+  title: "About ",
+}
+
 export default function About() {
   return (
     <div className="flex flex-col min-h-screen bg-white ">

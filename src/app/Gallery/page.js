@@ -1,5 +1,10 @@
 import Image from 'next/image'
 
+export const metadata = {
+  title: "Gallery",
+  description: "Chavez Concrete Work Inc. Photo Gallery",
+};
+
 export default function Gallery() {
   const images = [
     { src: '/roll1.JPG', alt: 'Gallery Image 1' },
