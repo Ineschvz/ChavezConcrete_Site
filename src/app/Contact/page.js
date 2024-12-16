@@ -5,6 +5,7 @@ import React from "react"
 import { Mail, Phone, MapPin } from 'lucide-react'
 import Head from "next/head"
 import { motion } from 'framer-motion'
+import Form from "./form"
 
 // export const metadata = {
 //   title: "Contact",
@@ -38,8 +39,12 @@ export default function Contact() {
     <div className="min-h-screen bg-white py-12">
       <Head>
         <title>Contact | Chavez Concrete</title>
+        <meta name="contact chavez concrete" content="Contact Chavez Concrete " />
+        <meta name="keywords" content="SEO, keywords, Next.js" />
       </Head>
+     
       <div className=" mx-auto px-4">
+        
         <motion.h1 
           className="text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none text-black"
           initial={{ opacity: 0, y: -20 }}
@@ -55,7 +60,9 @@ export default function Contact() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           We hope that if you made it to this page you have serious questions and would like to contact us!
-        </motion.p>
+        </motion.p> 
+        
+        <Form></Form>
 
         <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="p-6 md:p-10 grid md:grid-cols-2 gap-8 ">

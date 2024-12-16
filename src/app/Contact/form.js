@@ -58,3 +58,39 @@
 
 
 // export default contactForm;
+
+
+
+"use client"
+
+export default function Form() {
+  return (
+    <form className="flex flex-col gap-4" onSubmit={(e) => {
+      e.preventDefault()
+      const formData = new FormData(e.target)
+
+      fetch('/api/email-send', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: formData.get('name'),
+          email: formData.get('email'),
+          message: formData.get('message')
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(res => res.json())
+      .then(data => console.log(data))
+      .catch(err => console.error(err))
+    }}>
+      <label className="text-black" htmlFor="name">Name</label>
+      <input className="text-black" type="text" name="name" id="name" required />
+      <label className="text-black" htmlFor="email">Email</label>
+      <input className="text-black" type="email" name="email" id="email" required />
+      <label className="text-black" htmlFor="message">Message</label>
+      <textarea className="text-black" name="message" id="message" required></textarea>
+      <button className="text-black" type="submit">Submit</button>
+    </form>
+  )
+}
