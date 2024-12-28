@@ -62,7 +62,7 @@ export default function Contact() {
           We hope that if you made it to this page you have serious questions and would like to contact us!
         </motion.p> 
         
-        <Form></Form>
+
 
         <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="p-6 md:p-10 grid md:grid-cols-2 gap-8 ">
