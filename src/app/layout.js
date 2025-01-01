@@ -42,7 +42,6 @@ export default function RootLayout({ children }) {
         <Footer />
 
         {/* Load SMTP.js asynchronously */}
-        <Script src="https://smtpjs.com/v3/smtp.js" strategy="lazyOnload" />
       </body>
     </html>
   );

@@ -61,7 +61,7 @@ export default function Contact() {
         >
           We hope that if you made it to this page you have serious questions and would like to contact us!
         </motion.p> 
-        
+        <Form></Form>
 
 
         <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
