@@ -35,15 +35,13 @@ return (
         alert("Please fill out all fields before submitting.");
         return;
       }
-      const mailtoLink =
-        "mailto:ineschvz21@gmail.com" +
-        "?cc=" + encodeURIComponent(formData.email) +
-        "&subject=" + encodeURIComponent("Contact Form Submission") +
-        "&body=" +
-        encodeURIComponent(
-          `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`
-        );
-      window.location.href = mailtoLink;
+      const mailtoLink = "mailto:chavezconcreteworkinc@yahoo.com" +
+  "?cc=" + encodeURIComponent(formData.email) +
+  "&subject=" + encodeURIComponent("Contact Form Submission") +
+  "&body=" + encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
+
+window.location.href = mailtoLink;
+
       console.log("Email link opened successfully");
     } catch (error) {
       console.error("Error creating email link: ", error);
