@@ -1,23 +1,42 @@
 "use client"
 
-import React, { useState } from "react"
+import React from "react"
 import Link from "next/link"
 import Image from "next/image"
 
-const menuItems = [
-  { title: "About", href: "/About" },
-  { title: "Contact", href: "/Contact" },
-  { title: "Services", href: "/Services" },
-  { title: "Gallery", href: "/Gallery" },
-]
-
 export default function Navbar() {
-  //creating state for when a button/link is open
-  const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="relative z-50 bg-sky-950 bg-opacity-75">
-      <div className="max-w-screen-xl mx-auto px-4">
+    <section className="relative z-50 bg-sky-950 bg-opacity-50 backdrop-blur-md">
+      {/* deskto navigations */}
+      <div className="hidden w-full md:block">
+        <nav className="flex justify-between items-center">
+          
+
+          <ul className="flex items-center justify-center space-x-4 mx-auto ">
+            <li className="text-white hover:text-[#d69126] transition-colors duration-200 text-lg font-medium font-dmsans"><Link href="/About">About</Link></li>
+            <li className="text-white hover:text-[#d69126] transition-colors duration-200 text-lg font-medium"><Link href="/Contact">Contact</Link></li>
+          <Link href="/">
+            <Image src="/Badge Logo@300x.png" 
+            alt="Chavez Concrete Logo"
+            width={200} height={200} 
+            className="rounded-full"/>
+          </Link>
+            <li className="text-white hover:text-[#d69126]  transition-colors duration-200 text-lg font-medium"><Link href="/Services">Services</Link></li>
+            <li className="text-white hover:text-[#d69126]  transition-colors duration-200 text-lg font-medium"><Link href="/Gallery">Gallery</Link></li>
+          </ul>
+          
+        </nav>
+
+      </div>
+
+      </section>
+  )}
+
+
+
+
+      {/* <div className="max-w-screen-xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="rounded-full">
             <Image src="/Badge Logo.jpg" alt="Chavez Concrete Logo" width={75} height={45} className="rounded-full" />
@@ -95,7 +114,4 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      )}
-    </nav>
-  )
-}
+      )} */}
