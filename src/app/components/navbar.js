@@ -7,14 +7,19 @@ import Image from "next/image"
 export default function Navbar() {
 
   return (
-    <section className="relative z-50 bg-sky-950 bg-opacity-50 backdrop-blur-md">
-      {/* deskto navigations */}
-      <div className="hidden w-full md:block">
-        <nav className="flex justify-between items-center">
+    <section style={{height: '125px'}} className="fixed top-0 left-0 right-0 z-50 bg-sky-950 bg-opacity-50 backdrop-blur-md">
+      {/* desktop navigations 
+      
+
+    Look into the issue with a duplicate since i have section and nav 
+      
+      */}
+      
+        <nav style={{height: '125px'}} className="flex justify-center items-center ">
           
 
-          <ul className="flex items-center justify-center space-x-4 mx-auto ">
-            <li className="text-white hover:text-[#d69126] transition-colors duration-200 text-lg font-medium font-dmsans"><Link href="/About">About</Link></li>
+          <ul className="flex items-center justify-center space-x-8 mx-auto ">
+            <li className="text-white hover:text-[#d69126] transition-colors duration-200 text-lg font-medium "><Link href="/About">About</Link></li>
             <li className="text-white hover:text-[#d69126] transition-colors duration-200 text-lg font-medium"><Link href="/Contact">Contact</Link></li>
           <Link href="/">
             <Image src="/Badge Logo@300x.png" 
@@ -24,11 +29,58 @@ export default function Navbar() {
           </Link>
             <li className="text-white hover:text-[#d69126]  transition-colors duration-200 text-lg font-medium"><Link href="/Services">Services</Link></li>
             <li className="text-white hover:text-[#d69126]  transition-colors duration-200 text-lg font-medium"><Link href="/Gallery">Gallery</Link></li>
+
+            <ul className="absolute right-12 flex items-center space-x-4">
+            <Link href={"https://www.instagram.com/chavezconcreteworkinc/"} target="_blank" rel="noopener noreferrer">
+            <Image src="/instagram.svg" 
+            alt="Instagram" 
+            width={25} height={25}
+            />
+            </Link>
+            <Link href={"https://www.facebook.com/people/Chavez-Concrete-Work-Inc/61560458476532/?mibextid=kFxxJD"} target="_blank" rel="noopener noreferrer">
+            <Image src={"/facebook (1).svg"} 
+            alt="Facebook" 
+            width={25} height={25}
+            />
+            </Link>
+            <button className="bg-[#d69126] rounded-full py-2 px-2 flex items-center">
+              <Image src="/telephone-phone-mobile-cellphone.svg" 
+                alt="Phone"            
+                width={25} height={25}
+                className="mr-2"
+              />
+              <Link href="tel:+919-627-3839" className="text-white hover:text-sky-950 transition-colors duration-200 text-lg font-medium">
+                (919) 627-3839
+              </Link>
+            </button>
+
+            </ul>
+            {/* <Link href={"https://www.instagram.com/chavezconcreteworkinc/"} target="_blank" rel="noopener noreferrer">
+            <Image src="/instagram.svg" 
+            alt="Instagram" 
+            width={25} height={25}
+            />
+            </Link>
+            <Link href={"https://www.facebook.com/people/Chavez-Concrete-Work-Inc/61560458476532/?mibextid=kFxxJD"} target="_blank" rel="noopener noreferrer">
+            <Image src={"/facebook (1).svg"} 
+            alt="Facebook" 
+            width={25} height={25}
+            />
+            </Link>
+            <button className="bg-[#d69126] rounded-full py-2 px-2 flex items-center">
+              <Image src="/telephone-phone-mobile-cellphone.svg" 
+                alt="Phone"            
+                width={25} height={25}
+                className="mr-2"
+              />
+              <Link href="tel:+919-627-3839" className="text-white hover:text-white transition-colors duration-200 text-lg font-medium">
+                919-627-3839
+              </Link>
+            </button> */}
           </ul>
-          
+
         </nav>
 
-      </div>
 
       </section>
   )}
