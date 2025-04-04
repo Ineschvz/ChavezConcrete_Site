@@ -36,17 +36,17 @@ export default function Contact() {
   ]
 
   return (
-    <div className="min-h-screen bg-white py-12">
+    <div className="min-h-screen bg-white py-24 md:py-36 lg:py-48" id="contact">
       <Head>
         <title>Contact | Chavez Concrete</title>
         <meta name="contact chavez concrete" content="Contact Chavez Concrete " />
         <meta name="keywords" content="SEO, keywords, Next.js" />
       </Head>
-     
-      <div className=" mx-auto px-4">
+      
+      <div className="mx-auto px-4">
         
         <motion.h1 
-          className="text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none text-black"
+          className="text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl text-black"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -63,9 +63,8 @@ export default function Contact() {
         </motion.p> 
         <Form></Form>
 
-
-        <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-          <div className="p-6 md:p-10 grid md:grid-cols-2 gap-8 ">
+        <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+          <div className="p-6 md:p-10 grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               {contactInfo.map(({ icon: Icon, text, href, id }) => (
                 <motion.div 
@@ -84,17 +83,14 @@ export default function Contact() {
               ))}
             </div>
             <div className="relative h-64 md:h-auto rounded-lg overflow-hidden">
-            <div className="relative h-64 md:h-auto rounded-lg overflow-hidden">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.1363000006823!2d-78.927474!3d36.0731485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acaaf1b2e3cd47%3A0x7bfb5b8e00c0d8fa!2s7223%20Russell%20Rd%2C%20Durham%2C%20NC%2027712!5e0!3m2!1sen!2sus!4v1696368396393!5m2!1sen!2sus"
-    width="100%"
-    height="100%"
-    style={{ border: 0 }}
-    allowFullScreen
-    loading="lazy"
-  ></iframe>
-</div>
-
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.1363000006823!2d-78.927474!3d36.0731485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acaaf1b2e3cd47%3A0x7bfb5b8e00c0d8fa!2s7223%20Russell%20Rd%2C%20Durham%2C%20NC%2027712!5e0!3m2!1sen!2sus!4v1696368396393!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -102,6 +98,4 @@ export default function Contact() {
     </div>
   )
 }
-
-
 

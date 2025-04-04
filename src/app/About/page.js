@@ -9,13 +9,13 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="flex flex-col min-h-screen bg-white ">
+    <div className="flex flex-col min-h-screen bg-white">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-24 md:py-36 lg:py-48">
           <div className="container px-4 md:px-6 text-black">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
+              <div className="flex flex-col justify-center space-y-8">
+                <div className="space-y-4">
                   <h1 className="text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none">
                     About Chavez Concrete Work, Inc
                   </h1>
@@ -25,12 +25,12 @@ export default function About() {
                 </div>
                 <div className="flex justify-center">
                   <button asChild>
-                    <a  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"href="#our-story">Learn Our Story</a>
+                    <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700" href="#our-story">Learn Our Story</a>
                   </button>
                 </div>
               </div>
-              <Image 
-                src="/GroupPhoto.jpg" 
+              <Image
+                src="/GroupPhoto.jpg"
                 alt="Chavez Concrete Work team"
                 width={550}
                 height={550}
@@ -39,9 +39,9 @@ export default function About() {
             </div>
           </div>
         </section>
-        <section id="our-story" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-          <div className="container mx-auto px-4 py-12 text-black">
-            <h2 className="text-4xl font-extrabold tracking-tight text-center sm:text-5xl xl:text-6xl mb-8 ">
+        <section id="our-story" className="w-full py-24 md:py-36 lg:py-48 bg-muted">
+          <div className="container mx-auto px-4 py-24 text-black">
+            <h2 className="text-4xl font-extrabold tracking-tight text-center sm:text-5xl xl:text-6xl mb-8">
               Our Story
             </h2>
             {[
@@ -52,19 +52,19 @@ export default function About() {
               "Being based in North Carolina isn't just about our location; it's about our community. We take pride in building lasting relationships with our clients, partners, and neighbors. We're more than just a concrete company—we're a trusted partner in your projects, dedicated to helping you lay strong foundations for the future.",
               "Join us at Chavez Concrete Work, Inc as we continue to shape the landscape of North Carolina, one solid foundation at a time. Let's build something great together."
             ].map((paragraph, index) => (
-              <p key={index} className="max-w-3xl text-muted-foreground mt-6 mx-auto text-lg md:text-xl leading-relaxed text-center">
+              <p key={index} className="max-w-3xl text-muted-foreground mt-12 mx-auto text-lg md:text-xl leading-relaxed text-center">
                 {paragraph}
               </p>
             ))}
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-12">
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-24">
               {[
                 { src: '/DSC01484.jpg', alt: 'Concrete work example 1' },
                 { src: '/DSC01509.jpg', alt: 'Concrete work example 2' },
                 { src: '/DSC01585.jpg', alt: 'Concrete work example 3' }
               ].map((image, index) => (
-                <Image 
+                <Image
                   key={index}
-                  src={image.src} 
+                  src={image.src}
                   alt={image.alt}
                   width={400}
                   height={400}

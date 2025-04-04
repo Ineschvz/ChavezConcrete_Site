@@ -12,6 +12,12 @@ module.exports = {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      geist: ['var(--font-geist-sans)', 'sans-serif'],
+      geistMono: ['var(--font-geist-mono)', 'monospace'],
+      dmsans: ['var(--font-dmsans)', 'sans-serif'],
+      inter: ['Inter', 'sans-serif'],  // Ensure this matches your font
+    },
   },
   plugins: [],
 };

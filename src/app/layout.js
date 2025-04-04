@@ -7,18 +7,25 @@ import Script from "next/script"; // Import Script component
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 
+const dmsans = localFont({
+  src: "/fonts/DMSans-VariableFont_opsz,wght.ttf",
+  variable: "--font-dmsans",
+  weight: "100 900",
+});
+
 const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata = {
   title: {
@@ -34,7 +41,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-black text-white`}>
+      <body className={`${inter.className} ${dmsans.variable} bg-black text-white`}>
         <Navbar />
 
         <main>{children}</main>
@@ -46,3 +53,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
