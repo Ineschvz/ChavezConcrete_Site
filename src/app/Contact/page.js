@@ -7,10 +7,6 @@ import Head from "next/head"
 import { motion } from 'framer-motion'
 import Form from "./form"
 
-// export const metadata = {
-//   title: "Contact",
-// }
-
 
 
 export default function Contact() {
