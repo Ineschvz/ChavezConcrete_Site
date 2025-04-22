@@ -11,13 +11,13 @@ app.use(express.json());
 
 
 app.post("/Contact", (req, res) => {
-    const { name, email, message } = req.body;
+    const { name, lastName, phone, email, message } = req.body;
   
-    if (!name || !email || !message) {
+    if (!name || !last) {
       return res.status(400).json({ message: "Name, email and message are required" });
     }
   
-    console.log("Received name:", name, "email:", email, "message:", message);
+    console.log("Received name:", name, "email:", email, "last name:", lastName, "phone:", phone ,"message:", message);
     res.status(200).json({ message: `Thanks, ${name}, we got your email and message.` });
   });
   

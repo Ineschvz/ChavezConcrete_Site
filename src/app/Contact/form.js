@@ -11,7 +11,9 @@ import React, { FormEvent } from 'react';
 export default function Form() {
 
   const [name, setName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
 
@@ -30,6 +32,8 @@ export default function Form() {
       },
       body: JSON.stringify({
         name,
+        lastName,
+        phone,
         email,
         message,
       }),
@@ -44,104 +48,77 @@ export default function Form() {
 
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4 px-4">
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-row gap-4 items-center">
+        <label className="">
           Name:
           <input
-            className="border border-gray-400 p-2 text-black ml-2"
+            className="border border-gray-400 p-2 text-black w-full"
             id="name"
             type="text"
-            placeholder="John Doe"
+            placeholder="First Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
         </label>
-        <label>
+        <label className="">
+          Last Name:
+          <input
+            className="border border-gray-400 p-2 text-black w-full"
+            id="lastName"
+            type="text"
+            placeholder="Last Name"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            required
+          />
+        </label>
+
+        </div>
+        <label className="">
+          Phone:
+          <input
+            className="border border-gray-400 p-2 text-black w-full"
+            id="phone"
+            type="text"
+            placeholder="Phone Number"  
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            required
+          />
+        </label>
+
+        <label className="">
           Email:
           <input
-            className="border border-gray-400 p-2 text-black ml-2"
+            className="border border-gray-400 p-2 text-black w-full"
             id="email"
             type="text"
-            placeholder="iM7Pm@example.com"
+            placeholder="Email Address"
             value={email} 
             onChange={(e) => setEmail(e.target.value)}
             required
           />
         </label>
-        <label>
+        <label className="">
           Message:
           <input
-            className="border border-gray-400 p-2 text-black ml-2"
+            className="border border-gray-400 p-2 text-black w-full"
             id="message"
             type="text"
-            placeholder="..."
+            placeholder="Type your message here"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
           />
         </label>
       </div>
-      <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
+      <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded ">
         Submit
       </button>
     </form>
   );
 };
 
-// <form>
-
-//   <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-//    click me 
-//   </button>
-  
-// </form>
-
-{/* <label className="text-black">
-      Name:
-    <input className="border border-gray-400 p-2 text-black" id="name" placeholder="John Doe"></input>
-    <div className="error-txt" style={{display: 'none'}}> Name can not be empty</div>
-    </label>
-    <label className="text-black">
-      Email:
-    <input className="border border-gray-400 p-2 text-black" id="email" placeholder="iM7Pm@example.com"></input>
-    <div className="error-txt" style={{display: 'none'}}> Email can not be empty</div>
-    </label>
-    <label className="text-black">
-      Message:
-    <input className="border border-gray-400 p-2 text-black" id="message" placeholder="Enter your message here"></input>
-    <div className="error-txt" style={{display: 'none'}}> Message can not be empty</div>
-    </label>
-
-<button
-  type="button"
-  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-  onClick={() => {
-    try {
-      const formData = {
-        name: document.querySelector('input[id="name"]').value,
-        email: document.querySelector('input[id="email"]').value,
-        message: document.querySelector('input[id="message"]').value,
-      };
-      if (!formData.name || !formData.email || !formData.message) { 
-        alert("Please fill out all fields before submitting.");
-        return;
-      }
-      const mailtoLink = "mailto:chavezconcreteworkinc@yahoo.com" +
-  "?cc=" + encodeURIComponent(formData.email) +
-  "&subject=" + encodeURIComponent("Contact Form Submission") +
-  "&body=" + encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
-
-window.location.href = mailtoLink;
-
-      console.log("Email link opened successfully");
-    } catch (error) {
-      console.error("Error creating email link: ", error);
-    }
-  }}
-  
- >
-  Submit
-</button>
- */}
