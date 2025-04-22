@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 export async function POST(req) {
 
     // Extracting name, email, and message from the JSON body of the request
-    const { name, email, message } = await req.json();
+    const { name, lastName, phone, email, message } = await req.json();
     const transporter = nodemailer.createTransport({
         service: 'yahoo',
         auth: {
@@ -16,7 +16,7 @@ export async function POST(req) {
         from: process.env.EMAIL_USERNAME,
         to: 'chavezconcreteworkinc@yahoo.com',
         subject: 'Contact Form Submission',
-        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+        text: `Name: ${name}\n Last Name: ${lastName}\n Phone: ${phone}\n Email: ${email}\n Message: ${message}`
     };
 
     try {
