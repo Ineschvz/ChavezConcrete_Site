@@ -34,7 +34,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {navigationLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="hover:text-indigo-400 transition-colors duration-200">
+                  <Link href={link.href} className="hover:text-[#d69126] transition-colors duration-200">
                     {link.label}
                   </Link>
                 </li>
@@ -48,7 +48,7 @@ export default function Footer() {
               href="https://www.facebook.com/people/Chavez-Concrete-Work-Inc/61560458476532/?mibextid=kFxxJD"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 text-white hover:text-indigo-400 transition-colors duration-200"
+              className="inline-flex items-center space-x-2 text-white hover:text-[#d69126] transition-colors duration-200"
             >
               <Facebook size={24} />
               <span>Facebook</span>
