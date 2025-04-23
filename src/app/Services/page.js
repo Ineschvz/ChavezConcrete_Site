@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaCheck } from "react-icons/fa";
 import { ChevronRight, Hammer, Building2, Ruler } from "lucide-react";
 import Link from "next/link";
+import Head from "next/head";
 
 export const metadata = {
   title: "Services",
@@ -35,13 +36,15 @@ const Services = () => {
   
   
   return (
-    <div className=" mx-auto py-24 md:py-36 lg:py-48 bg-white">
-      <h1 className=" text-black rounded-md mb-12 text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none">
+    <div className=" mx-auto py-24 md:py-24 lg:py-24 bg-white">
+      <div className="py-24">
+      <h1 className=" text-black rounded-md mb-12 text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none ">
         Our Services
       </h1>
       <p className=" text-black max-w-[600px] text-muted-foreground md:text-xl text-center mx-auto">
         Providing top-quality concrete solutions for all your construction needs
       </p>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-12">
         {services.map((service, index) => (
           <div

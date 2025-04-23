@@ -32,14 +32,14 @@ export default function Contact() {
   ]
 
   return (
-    <div className="min-h-screen bg-white py-24 md:py-36 lg:py-48" id="contact">
+    <div className="min-h-screen bg-white py-24 md:py-24 lg:py-24" id="contact">
       <Head>
         <title>Contact | Chavez Concrete</title>
         <meta name="contact chavez concrete" content="Contact Chavez Concrete " />
         <meta name="keywords" content="SEO, keywords, Next.js" />
       </Head>
       
-      <div className="mx-auto px-4">
+      <div className="mx-auto px-4 py-24">
         
         <motion.h1 
           className="text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl text-black"

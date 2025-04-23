@@ -11,8 +11,13 @@ export default function About() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <main className="flex-1">
-        <section className="w-full py-24 md:py-36 lg:py-48">
-          <div className="container px-4 md:px-6 text-black">
+        {/* 
+          This section sets the vertical padding of the element to 24px on small screens,
+          48px on medium screens (md), and 48px on large screens (lg).
+          The values are defined in the tailwind.config.js file.
+        */}
+        <section className="w-full py-24 md:py-24 lg:py-24">
+          <div className="container py-24 px-4 md:px-6 text-black">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-8">
                 <div className="space-y-4">
