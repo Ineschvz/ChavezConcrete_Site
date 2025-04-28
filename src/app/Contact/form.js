@@ -5,9 +5,6 @@ import React, { FormEvent } from 'react';
 
 
 
-
-
-
 export default function Form() {
 
   const [name, setName] = useState('');
