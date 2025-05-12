@@ -5,9 +5,6 @@ import React, { FormEvent } from 'react';
 
 
 
-
-
-
 export default function Form() {
 
   const [name, setName] = useState('');
@@ -16,10 +13,9 @@ export default function Form() {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("hello", name)
+    console.log("hello", name);
  
     if (!name) {
       alert("Please fill out all fields");
@@ -40,10 +36,16 @@ export default function Form() {
     });
     if (res.status === 200) {
       alert("Email sent successfully");
+      console.log('resetting from.....');
+      // Reset input fields
+      setName('');
+      setLastName('');
+      setPhone('');
+      setEmail('');
+      setMessage('');
     } else {
       alert("Error sending email");
     }
-
   };
 
 
@@ -61,6 +63,7 @@ export default function Form() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            
           />
         </label>
         <label className="">
