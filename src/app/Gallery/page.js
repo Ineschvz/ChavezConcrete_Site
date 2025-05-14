@@ -6,6 +6,7 @@ export const metadata = {
 };
 
 export default function Gallery() {
+  //created an arraay of objects that hold images 
   const images = [
     { src: '/roll1.JPG', alt: 'Gallery Image 1' },
     { src: '/roll2.JPG', alt: 'Gallery Image 2' },
