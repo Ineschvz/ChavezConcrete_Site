@@ -40,7 +40,7 @@ export default function About() {
         </div>
 
         <div className="pt-20 px-10 text-[#134d67]">
-        <h1 className="text-3xl font-semibold tracking-tighter text-center sm:text-5xl xl:text-6xl/none">
+        <h1 className="text-3xl font-semibold tracking-tighter text-center sm:text-5xl xl:text-6xl">
           Our Mission
         </h1>
         <p className="max-w-[1000px] text-[#211f20] md:text-xl text-left mx-auto py-10">

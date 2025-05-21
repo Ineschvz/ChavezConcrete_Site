@@ -39,10 +39,10 @@ export default function Contact() {
         <meta name="keywords" content="SEO, keywords, Next.js" />
       </Head>
       
-      <div className="mx-auto px-4 py-24">
+      <div className="mx-auto px-4 py-24 text-[#134d67]">
         
         <motion.h1 
-          className="text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl text-black"
+          className="text-3xl font-semibold tracking-tighter text-center sm:text-5xl xl:text-6xl"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -50,7 +50,7 @@ export default function Contact() {
           Contact Chavez Concrete
         </motion.h1>
         <motion.p 
-          className="max-w-[600px] text-muted-foreground md:text-xl text-center mx-auto text-black py-5"
+          className="max-w-[1000px] text-[#211f20] md:text-xl text-left mx-auto py-10"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
