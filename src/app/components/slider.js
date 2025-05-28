@@ -45,6 +45,7 @@ const Slider = () => {
                         }`}
                     >
                         <Image
+                        priority = {index === 0}
                             src={image.src}
                             alt={image.alt}
                             layout="fill"
