@@ -48,7 +48,7 @@ const Slider = () => {
                         priority = {index === 0}
                             src={image.src}
                             alt={image.alt}
-                            layout="fill"
+                            fill
                             objectFit="cover"
                             className="absolute w-full h-full"
                         />
