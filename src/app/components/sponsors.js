@@ -32,7 +32,7 @@ export default function Sponsors() {
               What Our Clients Say
             </h2>
             <p className="max-w-[1000px] text-[#211f20] mx-auto text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Don't just take our word for it. Hear from our satisfied clients about their experience with our services.
+              {"Don't just take our word for it. Hear from our satisfied clients about their experience with our services."}
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
