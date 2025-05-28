@@ -30,8 +30,8 @@ export default function About() {
           <Image
             src={image.src}
             alt={image.alt}
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
             className="w-full h-full"
           />
           <div className="absolute inset-0 bg-black/30 z-10" />

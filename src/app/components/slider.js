@@ -49,7 +49,7 @@ const Slider = () => {
                             src={image.src}
                             alt={image.alt}
                             fill
-                            objectFit="cover"
+                            style={{ objectFit: 'cover' }}
                             className="absolute w-full h-full"
                         />
                         <div className="absolute bottom-0 right-0 z-10">
