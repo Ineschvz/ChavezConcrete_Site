@@ -121,7 +121,7 @@ export default function About() {
         </a>
         <a
           href="/Services"
-          className="outline-[#d69126] outline-double text-white font-semibold py-4 px-8 text-lg hover:bg-[#d69126]/80 transition duration-300"
+          className="outline-[#d69126] outline-double text-white font-semibold py-4 px-8 text-lg rounded hover:bg-[#d69126]/80 transition duration-300"
         >
           Services
         </a>
