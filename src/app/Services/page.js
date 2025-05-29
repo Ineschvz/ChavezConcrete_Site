@@ -14,21 +14,21 @@ const Services = () => {
     {
       title: "Pavement and Pathways",
       description: "We specialize in creating durable and attractive pavements and pathways.",
-      icon: <Ruler className="h-8 w-8 mb-2 text-blue-600" />,
+      icon: <Ruler className="h-8 w-8 mb-2 text-[#d69126] " />,
       items: ["Side Walks", "Drive Thrus"],
       image: "/Sidewalk.jpeg",
     },
     {
       title: "Structural Elements",
       description: "Our expertise extends to various structural concrete elements.",
-      icon: <Building2 className="h-8 w-8 mb-2 text-blue-600" />,
+      icon: <Building2 className="h-8 w-8 mb-2 text-[#d69126]" />,
       items: ["Curbs", "Stairs"],
       image: "/curb.jpeg",
     },
     {
       title: "Additional Services",
       description: "We offer a range of additional concrete services to meet your needs.",
-      icon: <Hammer className="h-8 w-8 mb-2 text-blue-600" />,
+      icon: <Hammer className="h-8 w-8 mb-2 text-[#d69126]" />,
       items: ["Gutters", "Slabs"],
       image: "/Gutter.jpg",
     },
@@ -38,14 +38,14 @@ const Services = () => {
   return (
     <div className=" mx-auto py-24 md:py-24 lg:py-24 bg-white">
       <div className="py-24">
-      <h1 className=" text-black rounded-md mb-12 text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none ">
+      <h1 className="text-3xl font-semibold tracking-tighter text-center sm:text-5xl xl:text-6xl/none text-[#134d67]">
         Our Services
       </h1>
-      <p className=" text-black max-w-[600px] text-muted-foreground md:text-xl text-center mx-auto">
-        Providing top-quality concrete solutions for all your construction needs
+      <p className="max-w-[1000px] text-[#211f20] md:text-xl text-left mx-auto py-10">
+        Chavez Concrete Work Inc. provides a wide range of concrete services to help you complete your construction projects. Our team of experts is dedicated to delivering high-quality workmanship and exceptional customer service. Whether you need pavement, structural elements, or additional services, we have the skills and experience to meet your needs.
       </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-10">
         {services.map((service, index) => (
           <div
             key={index}
@@ -78,9 +78,9 @@ const Services = () => {
       </div>
       <div className=" text-center">
         <Link href="/Contact" passHref>
-          <button className="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg text-lg flex items-center justify-center transition-all duration-300">
+          <button className="outline-[#d69126] outline-double text-[#134d67]  font-semibold py-4 px-8 text-lg hover:bg-[#d69126]/80 transition duration-300 rounded">
             Contact Us
-            <ChevronRight className="ml-2 h-5 w-5" />
+           
           </button>
         </Link>
       </div>

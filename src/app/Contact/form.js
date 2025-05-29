@@ -118,7 +118,7 @@ export default function Form() {
           />
         </label>
       </div>
-      <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded ">
+      <button type="submit" className="outline-[#d69126] outline-double text-[#134d67]  hover:bg-[#d69126]/80 transition duration-300 px-4 py-2 font-semibold rounded ">
         Submit
       </button>
     </form>

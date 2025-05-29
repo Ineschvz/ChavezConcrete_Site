@@ -1,37 +1,4 @@
-// //page.js will be our homepage
-// //we will add slide show, short about us and some testimonials 
-
-// import Image from "next/image";
-// import AboutUs from "./components/aboutus"
-// import Sponsors from "./components/sponsors"
-// import Slider from "./components/slider"
-// import MapboxMap from "./components/map";
-
-// export default function Home() {
-//   return (
-//     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-black text-gray-500">
-
-//     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-  
-//     </div>
-//     <div className=" w-full min-h-screen grid place-items-center">
-//       <Slider/>
-//     </div>
-//     <div>
-//     <AboutUs/>
-//     </div>
-//     <div>
-//     <Sponsors/>
-//     </div>
-//     <div>
-//     <MapboxMap/>
-//     </div>
-//   </main>
-   
-//   );
-// }
-
-
+"use client";
 import Image from "next/image"
 import AboutUs from "./components/aboutus"
 import Slider from "./components/slider"
@@ -45,11 +12,11 @@ export default function Home() {
       {/* Hero Section with Slider */}
       <section className="relative h-screen">
         <Slider />
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Chavez Concrete Work Inc</h1>
-            <p className="text-xl md:text-2xl text-white mb-8">Quality Concrete Solutions for Your Projects</p>
-            <a href="/Contact" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+        <div className="absolute inset-0 flex items-center px-5 py bg-black bg-opacity-50 ">
+          <div className="text-left ">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 typing-animation "> Reliable. Resilient. Ready. </h1>
+        
+            <a href="/Contact" className="inline-flex items-center justify-center px-5 py-3 outline-[#d69126] outline-double text-white font-semibold text-lg hover:bg-[#d69126]/80 transition duration-300 rounded ">
               Get a Quote
             </a>
           </div>
@@ -57,6 +24,35 @@ export default function Home() {
       </section>
 
       {/* About Us Section */}
+
+          <style jsx>{`
+        .typing-animation {
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 3px solid white;
+          animation: typing 4s steps(30, end), blink 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%;
+          }
+        }
+
+        @keyframes blink {
+          from,
+          to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: white;
+          }
+        }
+      `}</style>
+      
       <section className="py-16 bg-white text-black items-center">
         <div className="container mx-auto px-4 items-center">
   
@@ -89,12 +85,15 @@ export default function Home() {
       {/* Map Section */}
       <section className="py-16 bg-gradient-to-b from-gray-100 to-white">
   <div className="container mx-auto px-4">
-    <h2 className="text-4xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-black">Our Service Area</h2>
-    <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-black text-center">
+    <div className="w-full py-12 md:py-24 lg:py-32 space-y-4">
+    <h2 className="text-3xl font-semibold tracking-tighter text-center sm:text-5xl xl:text-6xl text-[#134d67]">Our Service Area</h2>
+    <p className="max-w-[1000px] text-muted-foreground sm:text-lg md:text-xl text-[#211f20] mx-auto text-left"> 
       Explore the map below to see the full radius of where we have worked. Zoom out to view the entire region we cover, and see how far our expertise extends.
     </p>
     <div className="h-96 shadow-lg rounded-lg overflow-hidden py-12">
       <MapboxMap />
+    </div>
+
     </div>
   </div>
 </section>
