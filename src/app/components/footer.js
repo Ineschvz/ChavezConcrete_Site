@@ -16,14 +16,14 @@ const navigationLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-12">
+    <footer className="text-white py-12  bg-sky-950  backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h2 className="text-lg font-semibold">Contact Us</h2>
             <Link
               href="/Contact"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200"
+              className="inline-flex items-center justify-center px-5 py-3 outline-[#d69126] rounded outline-double text-white font-semibold hover:bg-[#d69126]/80 transition duration-300"
             >
               Contact Us
             </Link>

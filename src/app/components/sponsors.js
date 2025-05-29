@@ -42,7 +42,8 @@ export default function Sponsors() {
                   <Image src={t.image} alt={t.author} width={60} height={60} className="rounded-full bg-green-900" />
                   <Image src="/5stars.png" alt="5 stars" width={150} height={30} />
                 </div>
-                <p className="text-lg font-semibold">"{t.quote}"</p>
+                <p className="text-lg font-semibold">&quot;{t.quote}&quot;</p>
+
                 <div className="font-semibold">{t.author}</div>
                 <div className="text-base text-muted-foreground">{t.title}</div>
               </div>
