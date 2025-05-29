@@ -28,7 +28,7 @@ export default function Gallery() {
 
   return (
     <div className=" mx-auto py-24 md:py-24 lg:py-24 bg-white">
-      <h1 className="text-black rounded-md mb-12 py-24 text-3xl font-bold tracking-tighter text-center sm:text-5xl xl:text-6xl/none">Image Gallery</h1>
+      <h1 className="text-[#134d67] rounded-md mb-12 py-24 text-3xl  tracking-tighter text-center sm:text-5xl xl:text-6xl/none font-semibold">Image Gallery</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((image, index) => (
           <div key={index} className="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out">
