@@ -46,12 +46,12 @@ export default function RootLayout({ children }) {
         <Navbar />
 
         <main>{children}</main>
-        <Analytics />
+
         <Footer />
+        <Analytics />
 
         {/* Load SMTP.js asynchronously */}
       </body>
     </html>
   );
 }
-
