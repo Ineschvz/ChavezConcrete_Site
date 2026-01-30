@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script"; // Import Script component 
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -45,7 +46,7 @@ export default function RootLayout({ children }) {
         <Navbar />
 
         <main>{children}</main>
-
+        <Analytics />
         <Footer />
 
         {/* Load SMTP.js asynchronously */}
