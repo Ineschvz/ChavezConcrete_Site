@@ -1,57 +1,41 @@
-"use client";
 import Image from "next/image"
 import AboutUs from "./components/aboutus"
 import Slider from "./components/slider"
 import Sponsors from "./components/sponsors"
-import MapboxMap from "./components/map"
+import dynamic from "next/dynamic"
 
+const MapboxMap = dynamic(() => import("./components/map"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full bg-gray-200 animate-pulse rounded-lg" />
+  ),
+})
+
+export const metadata = {
+  title: "Commercial Concrete Contractor Durham NC | Chavez Concrete Work Inc.",
+  description:
+    "Chavez Concrete Work Inc. provides commercial concrete flatwork in Durham, NC — sidewalks, curbs, gutters, slabs, drive-thrus, and stairs. Trusted by general contractors since 2003.",
+  alternates: {
+    canonical: "https://chavezconcreteworkinc.com",
+  },
+}
 
 export default function Home() {
-  return ( 
+  return (
     <main className="min-h-screen bg-gray-100">
       {/* Hero Section with Slider */}
       <section className="relative h-screen">
         <Slider />
         <div className="absolute inset-0 flex items-center px-5 py bg-black bg-opacity-50 ">
           <div className="text-left ">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 typing-animation "> Reliable. Resilient. Ready. </h1>
-        
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Commercial Concrete Contractor in Durham, NC</h1>
+            <p className="text-xl md:text-2xl text-white mb-6">Reliable. Resilient. Ready.</p>
             <a href="/Contact" className="inline-flex items-center justify-center px-5 py-3 outline-[#d69126] outline-double text-white font-semibold text-lg hover:bg-[#d69126]/80 transition duration-300 rounded ">
               Get a Quote
             </a>
           </div>
         </div>
       </section>
-
-      {/* About Us Section */}
-
-          <style jsx>{`
-        .typing-animation {
-          overflow: hidden;
-          white-space: nowrap;
-          border-right: 3px solid white;
-          animation: typing 4s steps(30, end), blink 0.5s step-end infinite;
-        }
-
-        @keyframes typing {
-          from {
-            width: 0;
-          }
-          to {
-            width: 100%;
-          }
-        }
-
-        @keyframes blink {
-          from,
-          to {
-            border-color: transparent;
-          }
-          50% {
-            border-color: white;
-          }
-        }
-      `}</style>
       
       <section className="py-16 bg-white text-black items-center">
         <div className="container mx-auto px-4 items-center">

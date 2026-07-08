@@ -56,9 +56,9 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="tel:+19196273839" onClick={() => setIsDrawerOpen(false)} className="hover:text-[#d69126]">
+            <a href="tel:+19196273839" onClick={() => setIsDrawerOpen(false)} className="hover:text-[#d69126]">
               (919) 627-3839
-            </Link>
+            </a>
           </li>
           <li className="flex space-x-4 mt-4">
             <Link href="https://www.instagram.com/chavezconcreteworkinc/" target="_blank" className="hover:text-[#d69126]">

@@ -1,0 +1,92 @@
+"use client"
+
+import React from "react"
+import { Mail, Phone, MapPin } from 'lucide-react'
+import { motion } from 'framer-motion'
+import Form from "./form"
+
+export default function ContactContent() {
+  const contactInfo = [
+    {
+      icon: Mail,
+      text: 'chavezconcreteworkinc@yahoo.com',
+      href: 'mailto:chavezconcreteworkinc@yahoo.com',
+      id: 'email'
+    },
+    {
+      icon: Phone,
+      text: '(919) 627-3839',
+      href: 'tel:+19196273839',
+      id: 'phone'
+    },
+    {
+      icon: MapPin,
+      text: '7223 Russell Rd, Durham, NC 27712',
+      href: 'https://www.google.com/maps?q=7223+Russell+Rd,+Durham,+NC+27712',
+      id: 'address'
+    },
+  ]
+
+  return (
+    <div className="min-h-screen bg-white py-24 md:py-24 lg:py-24" id="contact">
+      <div className="mx-auto px-4 py-24 text-[#134d67]">
+
+        <motion.h1
+          className="text-3xl font-semibold tracking-tighter text-center sm:text-5xl xl:text-6xl"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          Contact Chavez Concrete Work Inc.
+        </motion.h1>
+        <motion.p
+          className="max-w-[1000px] text-[#211f20] md:text-xl text-left mx-auto py-10"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          Ready to discuss your next commercial concrete project? Reach out for a free estimate — we serve Durham, Raleigh, Chapel Hill, and the greater Triangle area of North Carolina.
+        </motion.p>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-6">
+            <Form />
+          </div>
+          <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className="p-6 md:p-10 grid md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                {contactInfo.map(({ icon: Icon, text, href, id }) => (
+                  <motion.div
+                    key={id}
+                    className="flex items-center space-x-4"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <Icon className="h-6 w-6 text-blue-600" />
+                    <a href={href} target="_blank" rel="noopener noreferrer" className="text-black hover:underline">
+                      {text}
+                    </a>
+                  </motion.div>
+                ))}
+              </div>
+              <div className="relative h-64 md:h-auto rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.1363000006823!2d-78.927474!3d36.0731485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acaaf1b2e3cd47%3A0x7bfb5b8e00c0d8fa!2s7223%20Russell%20Rd%2C%20Durham%2C%20NC%2027712!5e0!3m2!1sen!2sus!4v1696368396393!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  title="Chavez Concrete Work Inc. office location in Durham, NC"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  )
+}

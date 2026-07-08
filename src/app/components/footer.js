@@ -21,11 +21,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h2 className="text-lg font-semibold">Contact Us</h2>
+            <p>
+              <a href="tel:+19196273839" className="hover:text-[#d69126] transition-colors duration-200">
+                (919) 627-3839
+              </a>
+            </p>
+            <p>
+              <a href="mailto:chavezconcreteworkinc@yahoo.com" className="hover:text-[#d69126] transition-colors duration-200">
+                chavezconcreteworkinc@yahoo.com
+              </a>
+            </p>
             <Link
               href="/Contact"
               className="inline-flex items-center justify-center px-5 py-3 outline-[#d69126] rounded outline-double text-white font-semibold hover:bg-[#d69126]/80 transition duration-300"
             >
-              Contact Us
+              Get a Quote
             </Link>
           </div>
 
@@ -62,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Chavez Concrete Work Inc. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Chavez Concrete Work Inc. All rights reserved. | Durham, NC</p>
         </div>
       </div>
     </footer>

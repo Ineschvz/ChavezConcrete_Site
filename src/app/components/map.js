@@ -15,7 +15,7 @@ function MapboxMap() {
   //This reference (mapNode) is used to pass the container (the div) into Mapbox’s initialization process so that the map knows where to render.
   const mapNode = React.useRef(null);
   //accesstoken key 
-  const mapboxAccessToken = 'pk.eyJ1IjoiaW5lc2NodnowMSIsImEiOiJjbHhjZzVpc2UwMnRzMmtxMHNlcms0czlvIn0.qiMdou5pWmvz_29oTINtcg';
+  const mapboxAccessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
   React.useEffect(() => {
     const node = mapNode.current;
