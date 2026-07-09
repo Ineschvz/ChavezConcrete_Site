@@ -19,7 +19,7 @@ function MapboxMap() {
 
   React.useEffect(() => {
     const node = mapNode.current;
-    if (typeof window === "undefined" || node === null) return;
+    if (typeof window === "undefined" || node === null || !mapboxAccessToken) return;
 
     // Initialize the map
     const mapboxMap = new mapboxgl.Map({
