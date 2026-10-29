@@ -16,7 +16,7 @@ export const metadata = {
   description:
     "Chavez Concrete Work Inc. provides commercial concrete flatwork in Durham, NC — sidewalks, curbs, gutters, slabs, drive-thrus, and stairs. Trusted by general contractors since 2003.",
   alternates: {
-    canonical: "https://chavezconcreteworkinc.com",
+    canonical: "/",
   },
 }
 
@@ -30,7 +30,7 @@ export default function Home() {
           <div className="text-left ">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Commercial Concrete Contractor in Durham, NC</h1>
             <p className="text-xl md:text-2xl text-white mb-6">Reliable. Resilient. Ready.</p>
-            <a href="/Contact" className="inline-flex items-center justify-center px-5 py-3 outline-[#d69126] outline-double text-white font-semibold text-lg hover:bg-[#d69126]/80 transition duration-300 rounded ">
+            <a href="/contact" className="inline-flex items-center justify-center px-5 py-3 outline-[#d69126] outline-double text-white font-semibold text-lg hover:bg-[#d69126]/80 transition duration-300 rounded ">
               Get a Quote
             </a>
           </div>

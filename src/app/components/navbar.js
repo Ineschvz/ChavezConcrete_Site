@@ -36,22 +36,22 @@ export default function Navbar() {
         </div>
         <ul className="flex flex-col space-y-4 p-4 text-lg">
           <li>
-            <Link href="/About" onClick={() => setIsDrawerOpen(false)} className="hover:text-[#d69126]">
+            <Link href="/about" onClick={() => setIsDrawerOpen(false)} className="hover:text-[#d69126]">
               About
             </Link>
           </li>
           <li>
-            <Link href="/Contact" onClick={() => setIsDrawerOpen(false)} className="hover:text-[#d69126]">
+            <Link href="/contact" onClick={() => setIsDrawerOpen(false)} className="hover:text-[#d69126]">
               Contact
             </Link>
           </li>
           <li>
-            <Link href="/Services" onClick={() => setIsDrawerOpen(false)} className="hover:text-[#d69126]">
+            <Link href="/services" onClick={() => setIsDrawerOpen(false)} className="hover:text-[#d69126]">
               Services
             </Link>
           </li>
           <li>
-            <Link href="/Gallery" onClick={() => setIsDrawerOpen(false)} className="hover:text-[#d69126]">
+            <Link href="/gallery" onClick={() => setIsDrawerOpen(false)} className="hover:text-[#d69126]">
               Gallery
             </Link>
           </li>
@@ -81,10 +81,10 @@ export default function Navbar() {
           <div className="flex items-center justify-center relative">
             <ul className="flex items-center space-x-8">
               <li className="text-white hover:text-[#d69126] text-lg font-medium">
-                <Link href="/About">About</Link>
+                <Link href="/about">About</Link>
               </li>
               <li className="text-white hover:text-[#d69126] text-lg font-medium">
-                <Link href="/Contact">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
               <Link href="/" className="mx-4">
                 <Image
@@ -96,10 +96,10 @@ export default function Navbar() {
                 />
               </Link>
               <li className="text-white hover:text-[#d69126] text-lg font-medium">
-                <Link href="/Services">Services</Link>
+                <Link href="/services">Services</Link>
               </li>
               <li className="text-white hover:text-[#d69126] text-lg font-medium">
-                <Link href="/Gallery">Gallery</Link>
+                <Link href="/gallery">Gallery</Link>
               </li>
             <li className="absolute top-0 right-0 lg:right-4 flex items-center space-x-4">
               <Link href="https://www.instagram.com/chavezconcreteworkinc/" target="_blank" className="hidden sm:block">

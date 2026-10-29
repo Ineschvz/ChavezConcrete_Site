@@ -2,11 +2,11 @@ import Image from 'next/image'
 import Script from 'next/script'
 
 export const metadata = {
-  title: "Project Gallery | Commercial Concrete Work in North Carolina",
+  title: "Commercial Concrete Projects",
   description:
-    "Browse completed commercial concrete projects by Chavez Concrete Work Inc. in Durham, NC and across North Carolina — sidewalks, curbs, slabs, and flatwork.",
+    "Photos of commercial concrete projects by Chavez Concrete Work Inc. across North Carolina.",
   alternates: {
-    canonical: "https://chavezconcreteworkinc.com/Gallery",
+    canonical: "/gallery",
   },
 };
 
@@ -15,7 +15,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://chavezconcreteworkinc.com" },
-    { "@type": "ListItem", position: 2, name: "Gallery", item: "https://chavezconcreteworkinc.com/Gallery" },
+    { "@type": "ListItem", position: 2, name: "Gallery", item: "https://chavezconcreteworkinc.com/gallery" },
   ],
 };
 

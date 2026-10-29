@@ -4,11 +4,11 @@ import Image from "next/image"
 import Script from "next/script"
 
 export const metadata = {
-  title: "About Chavez Concrete Work Inc. | Durham NC Concrete Contractor",
+  title: "About Us",
   description:
-    "Learn about Chavez Concrete Work Inc., a family-owned commercial concrete contractor in Durham, NC. Delivering quality flatwork, curbs, gutters, and slabs since 2003.",
+    "Family-owned commercial concrete contractor serving Durham and North Carolina since 2003.",
   alternates: {
-    canonical: "https://chavezconcreteworkinc.com/About",
+    canonical: "/about",
   },
 }
 
@@ -17,7 +17,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://chavezconcreteworkinc.com" },
-    { "@type": "ListItem", position: 2, name: "About", item: "https://chavezconcreteworkinc.com/About" },
+    { "@type": "ListItem", position: 2, name: "About", item: "https://chavezconcreteworkinc.com/about" },
   ],
 }
 
@@ -133,13 +133,13 @@ export default function About() {
       {/* Right: Buttons */}
       <div className="flex flex-col gap-4 lg:items-end">
         <a
-          href="/Contact"
+          href="/contact"
           className="outline-[#d69126] outline-double text-white font-semibold py-4 px-8 text-lg hover:bg-[#d69126]/80 transition duration-300"
         >
           Contact Us
         </a>
         <a
-          href="/Services"
+          href="/services"
           className="outline-[#d69126] outline-double text-white font-semibold py-4 px-8 text-lg rounded hover:bg-[#d69126]/80 transition duration-300"
         >
           Services

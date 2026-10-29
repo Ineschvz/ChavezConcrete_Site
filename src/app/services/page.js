@@ -6,11 +6,11 @@ import Link from "next/link";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Commercial Concrete Services Durham NC | Flatwork, Curbs, Slabs",
+  title: "Concrete Slabs, Curbs & Flatwork",
   description:
-    "Chavez Concrete Work Inc. offers commercial concrete services in Durham, NC including sidewalks, curbs and gutters, slabs, drive-thrus, and stairs. Request a bid today.",
+    "Commercial concrete services in Durham, NC: slabs, curbs and gutters, sidewalks, flatwork, dumpster pads and stairs.",
   alternates: {
-    canonical: "https://chavezconcreteworkinc.com/Services",
+    canonical: "/services",
   },
 };
 
@@ -129,7 +129,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 2,
       name: "Services",
-      item: "https://chavezconcreteworkinc.com/Services",
+      item: "https://chavezconcreteworkinc.com/services",
     },
   ],
 };
@@ -221,7 +221,7 @@ const Services = () => {
       </section>
 
       <div className="text-center py-8">
-        <Link href="/Contact">
+        <Link href="/contact">
           <button className="outline-[#d69126] outline-double text-[#134d67] font-semibold py-4 px-8 text-lg hover:bg-[#d69126]/80 transition duration-300 rounded">
             Request a Bid
           </button>

@@ -8,10 +8,10 @@ import { Facebook } from "lucide-react"
 //object created to hold links to navigate through pages 
 const navigationLinks = [
   { href: "/", label: "Home" },
-  { href: "/About", label: "About" },
-  { href: "/Contact", label: "Contact" },
-  { href: "/Services", label: "Services" },
-  { href: "/Gallery", label: "Gallery" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+  { href: "/services", label: "Services" },
+  { href: "/gallery", label: "Gallery" },
 ]
 
 export default function Footer() {
@@ -32,7 +32,7 @@ export default function Footer() {
               </a>
             </p>
             <Link
-              href="/Contact"
+              href="/contact"
               className="inline-flex items-center justify-center px-5 py-3 outline-[#d69126] rounded outline-double text-white font-semibold hover:bg-[#d69126]/80 transition duration-300"
             >
               Get a Quote
